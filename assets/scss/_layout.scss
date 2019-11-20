@@ -1,0 +1,44 @@
+section {
+    padding: 20px;
+}
+
+#How-it-Works {
+    position: relative;
+ 
+    
+    // border-top-left-radius: 140px;
+    // border-bottom-right-radius: 120px;
+    border-color: yellowgreen; 
+}
+
+.section-heading {
+    color: $finlo-light-blue;
+    font-weight: 400;
+}
+
+#why-finlo {
+    height: 100vh;
+    background-color: #efefef;
+    border: 80px solid #efefef66;
+    @media screen and (min-width:768px) and (max-width:1024px) {
+        height: 85vh;
+    border: 0px solid #efefef66;
+    }
+     @media only screen and (min-width : 320px) and (max-width : 520px) {
+        border: 0px solid #efefef66;
+    }
+}
+#more-help {
+    @media only screen and (min-width : 320px) and (max-width : 520px) {
+        border: 0px solid #efefef66;
+        position: relative;
+        top: 100px;
+    }
+}
+
+#features-wrapper {
+    background-image: url("/assets/img/bg-asset.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
