@@ -221,11 +221,11 @@ textarea {
   width: 70px; }
 
 #mainNav .nav-link {
-  color: white; }
+  color: white;
+  transition: ease-in 20ms; }
 
-#mainNav .nav-link:hover {
-  color: #0165C8 !important;
-  border-bottom: 1px dashed #01C8C8; }
+#mainNav .nav-link:hover, #mainNav .nav-link:active {
+  border-bottom: 2px solid #01C8C8; }
 
 .scrolled {
   background-color: white !important;
@@ -260,6 +260,11 @@ textarea {
   position: relative;
   z-index: 10;
   bottom: 25%; }
+  #hero__content--wrapper .hero__content {
+    padding: 5px; }
+  @media only screen and (min-width: 320px) and (max-width: 520px) {
+    #hero__content--wrapper {
+      bottom: 10%; } }
 
 .finlo-btn {
   background-color: #01C8C8 !important;
@@ -275,7 +280,7 @@ textarea {
   padding-bottom: 12px !important; }
 
 .finlo-btn:hover {
-  background-color: #047272 !important;
+  background-color: #0165C8 !important;
   border-radius: 50px;
   color: #fff !important; }
 
@@ -311,7 +316,11 @@ textarea {
 
 #features-wrapper {
   position: relative;
-  width: 100%; }
+  width: 100%;
+  background-image: url("/assets/img/bg-asset.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain; }
   #features-wrapper .img-leave {
     width: 250px;
     height: 250px;
@@ -329,15 +338,16 @@ textarea {
       position: absolute; }
     #features-wrapper .feature-item {
       margin: 0px;
-      margin-bottom: 15px; }
+      margin-bottom: 10px; }
     #features-wrapper .feature-items-wrapper {
+      width: 100%;
       position: relative;
       bottom: -145px; }
     #features-wrapper .img-leave {
       left: 10%; } }
 
 .feature-item {
-  height: 130px;
+  height: 150px;
   min-width: 300px;
   margin: 25px;
   border-radius: 19px;
@@ -357,18 +367,21 @@ textarea {
 
 #more-help .help-item {
   height: 130px;
-  margin: 25px;
-  border-radius: 19px;
+  margin-bottom: 15px;
+  border-radius: 20px;
   background: #fff;
-  padding: 15px;
+  padding: 10px;
   box-shadow: -2px 3px 17px rgba(0, 1, 15, 0.16);
   padding-bottom: 15px; }
   #more-help .help-item .help-item-phone {
     font-size: 1.6em; }
+    #more-help .help-item .help-item-phone i {
+      margin: 10px;
+      color: #28a745; }
 
 @media only screen and (min-width: 320px) and (max-width: 520px) {
   #more-help .img-leave-two {
-    width: 300px;
+    width: 290px;
     height: 450px;
     border-radius: 0px 170px 0px 170px;
     object-fit: cover; } }
@@ -388,23 +401,28 @@ textarea {
   #contacts-wrapper .contact-links {
     display: flex;
     list-style: none;
-    align-items: center; }
+    align-items: center;
+    margin-top: 25px; }
     #contacts-wrapper .contact-links a {
       color: #01C8C8 !important; }
     #contacts-wrapper .contact-links i {
       color: #0165C8; }
     #contacts-wrapper .contact-links .contact-social-link {
       margin: 5px; }
-    #contacts-wrapper .contact-links .contact-mail-link {
+    #contacts-wrapper .contact-links .contact-mail-link a {
       font-size: 1.5em;
       text-decoration: none;
-      margin-right: 25px; }
+      margin-left: 25px; }
   #contacts-wrapper #footer-logo {
     width: 100px;
     height: 100px; }
 
+body {
+  font-family: "Roboto","Helvetica Neue" !important; }
+
 section {
-  padding: 20px; }
+  padding: 50px;
+  margin-top: 20px; }
 
 #How-it-Works {
   position: relative;
@@ -414,26 +432,18 @@ section {
   color: #01C8C8;
   font-weight: 400; }
 
-#why-finlo {
+#why-Finlo {
   height: 100vh;
-  background-color: #efefef;
-  border: 80px solid #efefef66; }
+  background-color: #efefef; }
   @media screen and (min-width: 768px) and (max-width: 1024px) {
-    #why-finlo {
-      height: 85vh;
+    #why-Finlo {
+      height: 100vh;
       border: 0px solid #efefef66; } }
   @media only screen and (min-width: 320px) and (max-width: 520px) {
-    #why-finlo {
+    #why-Finlo {
       border: 0px solid #efefef66; } }
 
 @media only screen and (min-width: 320px) and (max-width: 520px) {
   #more-help {
     border: 0px solid #efefef66;
-    position: relative;
-    top: 100px; } }
-
-#features-wrapper {
-  background-image: url("/assets/img/bg-asset.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain; }
+    position: relative; } }

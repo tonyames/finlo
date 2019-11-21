@@ -1,5 +1,10 @@
+body {
+    font-family: "Roboto","Helvetica Neue" !important;
+}
+
 section {
-    padding: 20px;
+    padding: 50px;
+    margin-top: 20px;
 }
 
 #How-it-Works {
@@ -16,12 +21,13 @@ section {
     font-weight: 400;
 }
 
-#why-finlo {
+#why-Finlo {
     height: 100vh;
     background-color: #efefef;
-    border: 80px solid #efefef66;
+    
+
     @media screen and (min-width:768px) and (max-width:1024px) {
-        height: 85vh;
+        height: 100vh;
     border: 0px solid #efefef66;
     }
      @media only screen and (min-width : 320px) and (max-width : 520px) {
@@ -32,13 +38,9 @@ section {
     @media only screen and (min-width : 320px) and (max-width : 520px) {
         border: 0px solid #efefef66;
         position: relative;
-        top: 100px;
     }
 }
 
 #features-wrapper {
-    background-image: url("/assets/img/bg-asset.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
+    
 }
