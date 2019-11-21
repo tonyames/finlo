@@ -217,8 +217,8 @@ textarea {
 
 /*==================*/
 #logo {
-  height: 60px;
-  width: 60px; }
+  height: 70px;
+  width: 70px; }
 
 #mainNav .nav-link {
   color: white; }
@@ -350,9 +350,9 @@ textarea {
     color: #0165C8; }
 
 #more-help .img-leave-two {
-  width: 350px;
-  height: 465px;
-  border-radius: 0px 242px 0px 170px;
+  width: 300px;
+  height: 415px;
+  border-radius: 0px 170px 0px 170px;
   object-fit: cover; }
 
 #more-help .help-item {
@@ -364,20 +364,20 @@ textarea {
   box-shadow: -2px 3px 17px rgba(0, 1, 15, 0.16);
   padding-bottom: 15px; }
   #more-help .help-item .help-item-phone {
-    font-size: 2em; }
+    font-size: 1.6em; }
 
 @media only screen and (min-width: 320px) and (max-width: 520px) {
   #more-help .img-leave-two {
     width: 300px;
     height: 450px;
-    border-radius: 0px 242px 0px 170px;
+    border-radius: 0px 170px 0px 170px;
     object-fit: cover; } }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   #more-help .img-leave-two {
     width: 280px;
     height: 300px;
-    border-radius: 0px 242px 0px 170px;
+    border-radius: 0px 170px 0px 170px;
     object-fit: cover; } }
 
 #contacts-wrapper {
@@ -387,7 +387,18 @@ textarea {
   align-items: center; }
   #contacts-wrapper .contact-links {
     display: flex;
-    list-style: none; }
+    list-style: none;
+    align-items: center; }
+    #contacts-wrapper .contact-links a {
+      color: #01C8C8 !important; }
+    #contacts-wrapper .contact-links i {
+      color: #0165C8; }
+    #contacts-wrapper .contact-links .contact-social-link {
+      margin: 5px; }
+    #contacts-wrapper .contact-links .contact-mail-link {
+      font-size: 1.5em;
+      text-decoration: none;
+      margin-right: 25px; }
   #contacts-wrapper #footer-logo {
     width: 100px;
     height: 100px; }

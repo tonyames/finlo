@@ -1,7 +1,7 @@
 
 #logo {
-    height: 60px;
-    width:60px;
+    height: 70px;
+    width:70px;
 }
 
 #mainNav {
@@ -178,9 +178,9 @@
 #more-help {
 
     .img-leave-two {
-        width: 350px;
-        height: 465px;
-        border-radius: 0px 242px 0px 170px;
+        width: 300px;
+        height: 415px;
+        border-radius: 0px 170px 0px 170px;
         object-fit: cover;  
     }
     .help-item {
@@ -190,16 +190,17 @@
         background: #fff;
         padding: 15px;
         box-shadow: -2px 3px 17px rgba(0, 1, 15, 0.16);
-        padding-bottom: 15px;;
+        padding-bottom: 15px;
+        
         .help-item-phone{
-            font-size: 2em;
+            font-size: 1.6em;
         }
     }
     @media only screen and (min-width : 320px) and (max-width : 520px) {
     .img-leave-two {
             width: 300px;
             height: 450px;
-            border-radius: 0px 242px 0px 170px;
+            border-radius: 0px 170px 0px 170px;
             object-fit: cover;
         }
     }
@@ -209,7 +210,7 @@
     .img-leave-two {
         width: 280px;
         height: 300px;
-        border-radius: 0px 242px 0px 170px;
+        border-radius: 0px 170px 0px 170px;
         object-fit: cover;
         }
     }
@@ -223,6 +224,22 @@ align-items: center;
  .contact-links {
     display: flex;
     list-style: none;
+    align-items: center;
+    a {
+        color: $finlo-light-blue !important;
+
+    }
+    i {
+        color: $finlo-dark-blue;
+    }
+    .contact-social-link {
+        margin: 5px;
+    }
+    .contact-mail-link {
+        font-size: 1.5em;
+        text-decoration: none;
+        margin-right: 25px;
+    }
  }
  #footer-logo {
      width: 100px;
