@@ -5,15 +5,17 @@
 }
 
 #mainNav {
-    .nav-link{
+    .nav-link {
 
         color: white;
         transition: ease-in 20ms;
+        &:hover,&:focus {
+            border-bottom: 2px solid $finlo-light-blue;
+        }
     }
-    .nav-link:hover, .nav-link:active{
-
-       border-bottom: 2px solid $finlo-light-blue;
-    }
+     .nav-link.active {
+            border-bottom: 2px solid $finlo-light-blue;
+        }
 }
 .scrolled {
     background-color: white !important;
@@ -118,7 +120,6 @@
         color: $finlo-light-blue;
         counter-increment: step;
         content:counter(step);
-        background-image: url("../assets/img/leaves-1.png");
         height: 20px;
 
     }
@@ -177,7 +178,7 @@
     margin: 25px;
     border-radius: 19px;
     background: #fff;
-    padding: 15px;
+    padding: 12px;
     box-shadow: -2px 3px 17px rgba(0, 1, 15, 0.16);
 
     .feature-item-heading {
