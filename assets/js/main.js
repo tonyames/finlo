@@ -1,4 +1,4 @@
-//change bar color on scroll //
+//change bar color and logo on scroll //
 
 $(function () {
     $(document).scroll(function () {
