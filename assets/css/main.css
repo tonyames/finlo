@@ -240,7 +240,7 @@ textarea {
 #hero {
   height: 100vh;
   widows: 100%;
-  background-image: url("/assets/img/man-sitting-in-front-of-keyboard-2422278.jpg");
+  background-image: url("../img/looking-up-woman.jpg");
   background-size: cover;
   background-position: center center; }
 
@@ -419,7 +419,7 @@ textarea {
     height: 100px; }
 
 body {
-  font-family: "Roboto","Helvetica Neue" !important; }
+  font-family: "Roboto","Helvetica Neue"; }
 
 section {
   padding: 50px;
