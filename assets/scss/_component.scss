@@ -1,12 +1,12 @@
 
 #logo {
-    height: 70px;
-    width:70px;
+    height: 100px;
+    width:100px;
 }
 
 #mainNav {
     .nav-link {
-
+        font-size: 1.6em;
         color: white;
         transition: ease-in 20ms;
         &:hover,&:focus {
@@ -31,16 +31,16 @@
     }
 }
 #hero {
-    height: 100vh;
-    widows: 100%;
-    background-image: url("../img/looking-up-woman.jpg");
+    height: 80vh;
+    width: 100%;
+    background-image: url("../img/access-adult-african-american-woman-black-girl-1181556.jpg");
     background-size: cover;
     background-position: center center;
 }
 
 .hero__overlay {
 	background-color: #262626;
-	height: 100vh;
+	height: 80vh;
 	width: 100%;
     position: absolute;
     z-index: 0;
@@ -57,7 +57,10 @@
     margin-right: auto;
     position: relative;
     z-index: 10;
-    bottom: 25%;
+    bottom: 40%;
+    .headline {
+        font-weight: 200 !important;
+    }
     .hero__content {
         padding: 5px;
     }
@@ -72,6 +75,7 @@
     border-radius: 50px !important;
     color: #fff !important;
     margin-left: 10px;
+    font-size: 1.6rem !important;
     // padding: 8px !important;
    
 }
@@ -96,7 +100,7 @@
     justify-content: space-around;
     align-items: baseline;
     counter-reset:step;
-    background-color: #fafafa;
+    // background-color: #fafafa;
     border-radius: 10px;
     // box-shadow: -2px 3px 17px rgba(0, 1, 15, 0.16);
 
@@ -132,12 +136,24 @@
 
 #features-wrapper {
     position: relative;
+    margin: auto;
     width: 100%;
     background-image: url("/assets/img/bg-asset.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
     // border: 40px solid #efefef66;
+
+    .feature-picto-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        span {
+            width: 40px;
+            height: 40px;
+        }
+    }
     .img-leave {
         width: 250px;
         height: 250px;
@@ -173,14 +189,22 @@
     }
 }
 .feature-item {
-    height: 150px;
-    min-width: 300px;
-    margin: 25px;
-    border-radius: 19px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+    margin: 20px;
+    padding: 5px;
+    border-radius: 15px;
     background: #fff;
     padding: 12px;
-    box-shadow: -2px 3px 17px rgba(0, 1, 15, 0.16);
-
+    // box-shadow: -10px -10px 12px rgba(0, 1, 15, 0.16);
+    .feature-picto {
+        color: $finlo-light-blue;
+        margin: 20px 20px 0px;
+    }
     .feature-item-heading {
         margin: 15px;
         font-weight: 600;
@@ -197,7 +221,7 @@
         object-fit: cover;  
     }
     .help-item {
-        height: 130px;
+        // height: 160px;
         margin-bottom: 15px;
         border-radius: 20px;
         background: #fff;
@@ -235,7 +259,7 @@
 
 #contacts-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap-reverse;
     align-items: center;
  .contact-links {
@@ -259,6 +283,7 @@
         margin-left: 25px;
     }
  }
+
  #footer-logo {
      width: 100px;
      height: 100px;

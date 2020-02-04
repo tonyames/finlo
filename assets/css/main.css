@@ -217,10 +217,11 @@ textarea {
 
 /*==================*/
 #logo {
-  height: 70px;
-  width: 70px; }
+  height: 100px;
+  width: 100px; }
 
 #mainNav .nav-link {
+  font-size: 1.6em;
   color: white;
   transition: ease-in 20ms; }
   #mainNav .nav-link:hover, #mainNav .nav-link:focus {
@@ -238,15 +239,15 @@ textarea {
     color: #0165C8 !important; }
 
 #hero {
-  height: 100vh;
-  widows: 100%;
-  background-image: url("../img/looking-up-woman.jpg");
+  height: 80vh;
+  width: 100%;
+  background-image: url("../img/access-adult-african-american-woman-black-girl-1181556.jpg");
   background-size: cover;
   background-position: center center; }
 
 .hero__overlay {
   background-color: #262626;
-  height: 100vh;
+  height: 80vh;
   width: 100%;
   position: absolute;
   z-index: 0;
@@ -261,7 +262,9 @@ textarea {
   margin-right: auto;
   position: relative;
   z-index: 10;
-  bottom: 25%; }
+  bottom: 40%; }
+  #hero__content--wrapper .headline {
+    font-weight: 200 !important; }
   #hero__content--wrapper .hero__content {
     padding: 5px; }
   @media only screen and (min-width: 320px) and (max-width: 520px) {
@@ -272,7 +275,8 @@ textarea {
   background-color: #01C8C8 !important;
   border-radius: 50px !important;
   color: #fff !important;
-  margin-left: 10px; }
+  margin-left: 10px;
+  font-size: 1.6rem !important; }
 
 .finlo-big-btn {
   padding: 12px;
@@ -291,7 +295,6 @@ textarea {
   justify-content: space-around;
   align-items: baseline;
   counter-reset: step;
-  background-color: #fafafa;
   border-radius: 10px; }
   .steps-wrapper .step-item {
     display: flex;
@@ -317,11 +320,20 @@ textarea {
 
 #features-wrapper {
   position: relative;
+  margin: auto;
   width: 100%;
   background-image: url("/assets/img/bg-asset.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain; }
+  #features-wrapper .feature-picto-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: auto; }
+    #features-wrapper .feature-picto-wrapper span {
+      width: 40px;
+      height: 40px; }
   #features-wrapper .img-leave {
     width: 250px;
     height: 250px;
@@ -348,13 +360,20 @@ textarea {
       left: 10%; } }
 
 .feature-item {
-  height: 150px;
-  min-width: 300px;
-  margin: 25px;
-  border-radius: 19px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 100%;
+  margin: 20px;
+  padding: 5px;
+  border-radius: 15px;
   background: #fff;
-  padding: 12px;
-  box-shadow: -2px 3px 17px rgba(0, 1, 15, 0.16); }
+  padding: 12px; }
+  .feature-item .feature-picto {
+    color: #01C8C8;
+    margin: 20px 20px 0px; }
   .feature-item .feature-item-heading {
     margin: 15px;
     font-weight: 600;
@@ -367,7 +386,6 @@ textarea {
   object-fit: cover; }
 
 #more-help .help-item {
-  height: 130px;
   margin-bottom: 15px;
   border-radius: 20px;
   background: #fff;
@@ -396,7 +414,7 @@ textarea {
 
 #contacts-wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap-reverse;
   align-items: center; }
   #contacts-wrapper .contact-links {
@@ -431,10 +449,11 @@ section {
 
 .section-heading {
   color: #01C8C8;
+  font-size: 2.5em;
   font-weight: 400; }
 
 #why-Finlo {
-  height: 100vh;
+  height: 70vh;
   background-color: #efefef; }
   @media screen and (min-width: 768px) and (max-width: 1024px) {
     #why-Finlo {
