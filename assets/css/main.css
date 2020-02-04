@@ -276,14 +276,11 @@ textarea {
   border-radius: 50px !important;
   color: #fff !important;
   margin-left: 10px;
-  font-size: 1.6rem !important; }
+  font-size: 1.6rem !important;
+  padding: 8px 30px !important; }
 
 .finlo-big-btn {
-  padding: 12px;
-  padding-left: 35px !important;
-  padding-right: 35px !important;
-  padding-top: 12px !important;
-  padding-bottom: 12px !important; }
+  padding: 15px 35 !important; }
 
 .finlo-btn:hover {
   background-color: #0165C8 !important;
@@ -374,10 +371,16 @@ textarea {
   .feature-item .feature-picto {
     color: #01C8C8;
     margin: 20px 20px 0px; }
-  .feature-item .feature-item-heading {
-    margin: 15px;
-    font-weight: 600;
-    color: #0165C8; }
+  .feature-item .feature-item-heading-wrapper {
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .feature-item .feature-item-heading-wrapper .feature-item-heading {
+      margin: 15px;
+      font-weight: 600;
+      color: #0165C8; }
 
 #more-help .img-leave-two {
   width: 300px;
@@ -439,6 +442,9 @@ textarea {
 body {
   font-family: "Roboto","Helvetica Neue"; }
 
+* {
+  box-sizing: border-box; }
+
 section {
   padding: 50px;
   margin-top: 20px; }
@@ -453,8 +459,12 @@ section {
   font-weight: 400; }
 
 #why-Finlo {
-  height: 70vh;
-  background-color: #efefef; }
+  height: 60vh;
+  background-color: #efefef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
   @media screen and (min-width: 768px) and (max-width: 1024px) {
     #why-Finlo {
       height: 100vh;
